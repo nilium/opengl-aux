@@ -9,6 +9,8 @@ Contributing
 
 Want to contribute to the development of opengl-aux? Need something wrapped that isn't already wrapped? You can contribute either by creating issues on or submitting pull requests for changes on the [opengl-aux GitHub page][GitHub]. Welcome changes include anything from usability questions to bug reports and fixes to additional or improved GL object wrappers.
 
+[GitHub]: https://github.com/nilium/opengl-aux
+
 Specific areas where opengl-aux is lacking include documentation, examples, and GL object wrappers. As of this writing, there are only programs, shaders, textures, buffers, and vertex array objects -- they comprise the majority of what you'll do, but a somewhat Ruby-like interface for everything would eventually be welcome.
 
 The only major requirement for code contributions is that you agree to license your contribution under the same license as opengl-aux (shown below). Aside from that, if you have any questions, feel free to create an issue.
