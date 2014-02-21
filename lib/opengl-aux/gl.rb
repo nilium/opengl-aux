@@ -9,6 +9,7 @@
 
 require 'opengl-core'
 require 'snow-data'
+require 'opengl-aux/error'
 
 
 # Extensions to the opengl-core Gl module.
@@ -32,11 +33,11 @@ module GL
 
   GLObject = Snow::CStruct.new { gl_uint :name }
 
-  def check_gl_error(msg = nil)
+  def assert_no_gl_error(msg = nil)
     error = glGetError
 
-    if error != GL_ERROR_NONE
-
+    if error != GL_NO_ERROR
+      raise GLStateError.new(error), msg
     end
   end
 
