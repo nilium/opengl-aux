@@ -236,7 +236,7 @@ module GL
     GL.__temp_alloc__(GL.__boxed_type__(:gl_boolean)) do |p|
       p.name = 0
       glGetBooleanv(pname, p.address)
-      p.name != GL::GL_FALSE
+      p.name != GL_FALSE
     end
   end
 
