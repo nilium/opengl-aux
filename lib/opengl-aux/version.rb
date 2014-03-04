@@ -8,5 +8,5 @@
 
 
 module GL
-  OPENGL_AUX_VERSION = '1.0.0.pre1'
+  OPENGL_AUX_VERSION = '1.0.0.pre2'
 end
