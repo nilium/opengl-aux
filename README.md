@@ -21,8 +21,9 @@ Acknnowledgments
 
 This is a list of everyone who has contributed in any meaningful way to opengl-aux's development thus far:
 
-- [Justin Scott](https://github.com/JScott)
 - [Noel Cower](https://github.com/nilium)
+- James Putt
+- [Justin Scott](https://github.com/JScott)
 
 
 License
