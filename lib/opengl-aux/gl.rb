@@ -60,7 +60,7 @@ module GL
       else
         type.new(*args) do |p|
           begin
-            result = yield[p]
+            result = yield(p)
           ensure
             p.free!
           end
