@@ -16,8 +16,8 @@ Specific areas where opengl-aux is lacking include documentation, examples, and 
 The only major requirement for code contributions is that you agree to license your contribution under the same license as opengl-aux (shown below). Aside from that, if you have any questions, feel free to create an issue.
 
 
-Contributors
-------------
+Acknnowledgments
+----------------
 
 This is a list of everyone who has contributed in any meaningful way to opengl-aux's development thus far:
 
