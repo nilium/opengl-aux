@@ -101,7 +101,7 @@ class GL::Program
 
   def use
     if block_given?
-      preserve_binding do
+      self.class.preserve_binding do
         use
         yield self
       end
