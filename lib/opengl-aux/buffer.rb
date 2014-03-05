@@ -76,7 +76,7 @@ class GL::Buffer
   end
 
   def bind(target = nil)
-    target ||= (@target || GL_ARRAY_BUFFER)
+    target ||= (@target || GL::GL_ARRAY_BUFFER)
     @target ||= target
     raise ArgumentError, "No target given and no previous target" unless target
 
