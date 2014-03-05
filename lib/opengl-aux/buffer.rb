@@ -83,6 +83,7 @@ class GL::Buffer
 
     if block_given?
       self.class.preserve_binding(target) do
+        bind target
         yield self
       end
     else
