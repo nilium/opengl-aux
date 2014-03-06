@@ -22,7 +22,8 @@ class GL::Buffer
     end
 
     def preserve_binding(target)
-      current = bound_name(target)
+      raise ArgumentError, "No block given" unless block_given?
+      current = current_binding(target)
       begin
         yield
       ensure
@@ -76,12 +77,13 @@ class GL::Buffer
   end
 
   def bind(target = nil)
-    target ||= (@target || GL_ARRAY_BUFFER)
+    target ||= (@target || GL::GL_ARRAY_BUFFER)
     @target ||= target
     raise ArgumentError, "No target given and no previous target" unless target
 
     if block_given?
-      preserve_binding(target) do
+      self.class.preserve_binding(target) do
+        bind target
         yield self
       end
     else
