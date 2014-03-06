@@ -90,7 +90,7 @@ class GL::Texture
 
   def bind(target = nil)
     # You may think this is insane, but I assure you, it isn't.
-    target ||= (@target || GL_TEXTURE_2D)
+    target ||= (@target || GL::GL_TEXTURE_2D)
     @target ||= target
     raise ArgumentError, "No target given and no previous target" unless target
 
