@@ -3,6 +3,10 @@ opengl-aux
 
 opengl-aux is a collection of auxiliary OpenGL functions and types for working with the opengl-core gem. It includes simple wrappers around existing OpenGL types such as buffer objects, vertex array objects, and program objects as well as simplified functions for retrieving the extensions list, glGet without the use of pointers, and other niceties.
 
+Examples
+------------
+
+See sample code in `examples/triangles.rb`
 
 Contributing
 ------------
