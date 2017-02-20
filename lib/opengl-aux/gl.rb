@@ -131,7 +131,11 @@ module GL
             send(raw_name, 1, objects.address)
           when GLObject::Array
             send(raw_name, objects.length, objects.address)
-          when Fixnum
+          when Integer
+            # TODO(nilium): consider raising an exception when the integer is
+            # out of range (i.e., cannot be represented within 64 bits)?  Would
+            # make sense, but would need to distinguish signed/unsigned ranges
+            # and types.
             GL.__temp_alloc__(GLObject) do |p|
               p.name = objects
               send(raw_name, 1, p.address)
