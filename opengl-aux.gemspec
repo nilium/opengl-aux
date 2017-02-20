@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.email       = 'ncower@gmail.com'
   s.files       = Dir.glob('lib/**/*.rb')
   s.homepage    = 'https://github.com/nilium/opengl-aux'
-  s.license     = 'Simplified BSD'
+  s.license     = 'BSD-2-Clause'
   s.required_ruby_version = '~> 2.0'
 
   s.add_runtime_dependency 'opengl-core', '~> 2.0'
